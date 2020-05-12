@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: pilot
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+ekasui:
+  url: tmp
