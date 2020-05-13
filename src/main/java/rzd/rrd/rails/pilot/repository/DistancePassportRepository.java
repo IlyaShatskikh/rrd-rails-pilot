@@ -6,6 +6,6 @@ import rzd.rrd.rails.pilot.domain.DistancePassport;
 
 public interface DistancePassportRepository extends CrudRepository<DistancePassport, Long> {
 
-    @Query("select * from table(maximo.etb_p.gp_wayclass(':siteId'));")
+    @Query("select * from table(maximo.etb_p.gp_wayclass(:siteId))")
     Iterable<DistancePassport> findBySiteId(String siteId);
 }
