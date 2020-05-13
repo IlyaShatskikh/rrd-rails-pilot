@@ -6,5 +6,5 @@ spring:
     username:
     password:
     driver-class-name: oracle.jdbc.driver.OracleDriver
-ekasui:
-  url: tmp
+destination:
+  url: http://localhost:8089/data

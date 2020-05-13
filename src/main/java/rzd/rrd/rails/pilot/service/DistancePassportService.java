@@ -15,14 +15,14 @@ public class DistancePassportService {
 
     private final DistancePassportRepository repository;
 
-    @Value("${ekasui.url}")
-    private String url;
+    @Value("${destination.url}")
+    private String destUrl;
 
     public List<DistancePassport> getDistancePassport(String siteId){
          return (List<DistancePassport>) repository.findBySiteId(siteId);
     }
 
     public String postPassportDistance(List<DistancePassport> passports){
-        return new RestTemplate().postForObject(url, passports, String.class);
+        return new RestTemplate().postForObject(destUrl, passports, String.class);
     }
 }
