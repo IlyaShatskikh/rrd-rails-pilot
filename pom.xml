@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>rzd.rrd.rails</groupId>
-	<artifactId>pilot</artifactId>
+	<artifactId>distance-passport-pilot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pilot</name>
 	<description>Pilot project for Spring Boot</description>
