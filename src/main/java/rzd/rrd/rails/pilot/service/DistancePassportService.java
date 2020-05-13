@@ -1,6 +1,5 @@
 package rzd.rrd.rails.pilot.service;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -24,7 +23,6 @@ public class DistancePassportService {
     }
 
     public String postPassportDistance(List<DistancePassport> passports){
-        new RestTemplate().postForLocation("url", passports);
-        return "done";
+        return new RestTemplate().postForObject(url, passports, String.class);
     }
 }
