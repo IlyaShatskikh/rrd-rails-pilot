@@ -1,0 +1,10 @@
+#spring:
+#  application:
+#    name: pilot
+#  datasource:
+#    url: jdbc:oracle:thin:@localhost:1234:XE
+#    username: SYSTEM
+#    password: 123
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+destination:
+  url: http://localhost:8089/data
